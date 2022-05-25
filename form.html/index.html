@@ -5,12 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forms</title>
+     <style>
+        centre{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
 </head>
 <body>
     <centre>
-        <h1 style=text-align:center>Survey Form</h1>
-        <h3 style=text-align:center>let us know how we can improve freecodecamp</h3>
-        <table style=text-align:centre, cellpadding="10">
+        <h1>Survey Form</h1>
+        <h3>let us know how we can improve freecodecamp</h3>
+        <table cellpadding="10">
             <tr>
                 <td>First Name :</td>
                 <td><input type="text" id="name" name="name"
@@ -42,9 +49,11 @@
                     how likely you recommed others?
                 </td>
                 <td>
-                    <input type="radio"maybe>maybe<br>
-                    <input type="radio"maybe>definately<br>
-                    <input type="radio"maybe>not sure<br>
+         <!-- if the same name attribute is used for radio buttons only 1 button can be selected -->
+
+                    <input type="radio" name="recommed" maybe>maybe<br>
+                    <input type="radio" name="recommed" maybe>definately<br>
+                    <input type="radio" name="recommed" maybe>not sure<br>
                 </td>
             </tr>
             <tr>    
